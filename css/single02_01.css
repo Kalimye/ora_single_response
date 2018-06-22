@@ -1,0 +1,31 @@
+.section13-comment-item .avatar {
+  display: inline-block;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+
+.section13-comment-item.user01 .avatar {
+  background: url("../images/single02/02_01/avatar-tianchangdijiumili.png") no-repeat center center;
+	background-size: 100%
+}
+.section13-comment-item.user02 .avatar {
+  background: url("../images/single02/02_01/avatar-guotianbao.png") no-repeat center center;
+	background-size: 100%
+}
+.section13-comment-item.user03 .avatar {
+  background: url("../images/single02/02_01/avatar-sanrenzhixu.png") no-repeat center center;
+	background-size: 100%
+}
+.section13-comment-item.user04 .avatar {
+  background: url("../images/single02/02_01/avatar-weitaming1231.png") no-repeat center center;
+	background-size: 100%
+}
+.section13-comment-item.user05 .avatar {
+  background: url("../images/single02/02_01/avatar-nizhuanshuwoyigerena.png") no-repeat center center;
+	background-size: 100%
+}
+
+.section13-comment-item .content .comment p {
+  line-height: 20px;
+}

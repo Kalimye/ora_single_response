@@ -1,0 +1,463 @@
+/**
+ * single02.css
+ * single02 样式表
+*/
+
+html { font-size: 100px; }
+
+body { font-family: "Microsoft YaHei"; color: #313131; }
+p { line-height: 33px; } 
+
+.text-indent { text-indent: 28px; }
+.text-red { color: #f86d8a; }
+.text-white { color: #fff; }
+.text-strong { font-weight: bold; }
+.box {
+  padding: 16px;
+	background: #e18dac;
+	border-radius: 10px;
+	margin: 10px 0;
+}
+.box p { margin-bottom: 0; }
+
+.box-title {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-title p { margin-bottom: 0; }
+.box-title span {
+  font-size: 16px;
+  display: inline-block;
+	background: #313131;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px 10px;
+	border-radius: 3px;
+	margin: 25px 0;
+}
+.wechat-title {
+  display: inline-block;
+  padding: 5px 15px;
+	border-radius: 50px;
+	background: #f86d8a;
+	color: #fff;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.border-red {
+  border: 2px solid #f86d8a;
+	border-radius: 3px;
+	padding: 12px;
+	margin: 10px 16px;
+}
+.border-red p { margin-bottom: 0; }
+.hidden { display: none; }
+.image-big {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+	margin-bottom: 10px;
+}
+.image-big img {
+  width: 689px;
+	height: 409px;
+}
+@media (max-width: 768px) {
+  .image-big img { width: 100%; height: 100%; }
+}
+.section-item { padding-bottom: 50px; }
+
+/** 移动端下一级标题的文字大小 */
+@media (max-width: 768px) {
+  h1 { font-size: 24px; }
+}
+
+/** Start: section 01 - 标题及发布日期 */
+.section01-date { color: #919191; padding: 15px; }
+.section01-link { color: #fd3232; }
+/** End: section 01 - 标题及发布日期 */
+
+.four-steps {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.four-steps .wrap { width: 100%; }
+.four-steps span {
+  display: inline-block;
+}
+.four-steps .icon-step {
+  width: 34px;
+	height: 53px;
+}
+.four-steps .text-step {
+  background: #fff;
+	width: 100%;
+	line-height: 25px;
+}
+.four-steps div:nth-child(1) .icon-step {
+  background: url("../images/single02/step-01.png") no-repeat center center;
+	background-size: 50%;
+}
+.four-steps div:nth-child(2) .icon-step {
+  background: url("../images/single02/step-02.png") no-repeat center center;
+	background-size: 50%;
+}
+.four-steps div:nth-child(3) .icon-step {
+  background: url("../images/single02/step-03.png") no-repeat center center;
+	background-size: 50%;
+}
+.four-steps div:nth-child(4) .icon-step {
+  background: url("../images/single02/step-04.png") no-repeat center center;
+	background-size: 50%;
+}
+.four-steps .box-square {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.four-steps .box-square>div {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #f86d8a;
+	border-radius: 25px;
+	padding: 0 30px;
+}
+
+.four-steps .box-square .text-step {
+  width: auto;
+}
+
+.border-title {
+  padding: 20px 0;
+	font-weight: bold;
+}
+.border-title span {
+  border: 2px solid #f86d8a;
+  font-size: 16px;
+	color: #f86d8a;
+	margin-bottom: 0;
+	padding: 3px 10px;
+}
+.border-title p {
+  padding: 3px 0;
+}
+
+.heart-text,
+.number-text {
+  display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.number-text { justify-content: center; }
+.heart-text>span,
+.number-text>span {
+  padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+  display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: #313131;
+	border-radius: 3px;
+}
+.number-text>span { padding-left: 10px; }
+.heart-text .icon-heart {
+  display: inline-block;
+  width: 32px;
+	height: 28px;
+	background: url("../images/single02/icon-heart-white.png") no-repeat center center;
+	background-size: 60%;
+}
+.number-text .icon-number-01 {
+  display: inline-block;
+	width: 18px;
+	height: 28px;
+	background: url("../images/single02/icon-number-white-01.png") no-repeat center center;
+	background-size: 60%;
+}
+.number-text .icon-number-02 {
+  display: inline-block;
+	width: 18px;
+	height: 28px;
+	background: url("../images/single02/icon-number-white-02.png") no-repeat center center;
+	background-size: 60%;
+}
+.heart-text .text,
+.number-text .text {
+	font-weight: bold;
+	color: #fff;
+}
+.number-text .text { padding-right: 10px; }
+
+.border-box-black {
+  border: 2px solid #313131;
+	border-radius: 3px;
+  margin: 10px 0;
+}
+.border-box-black p { padding: 12px; margin-bottom: 0; }
+
+.image-single {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+}
+.image-single-wrap img {
+  width: 100%;
+	height: 100%;
+}
+
+.icon-heart-red {
+  display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: url("../images/single02/icon-heart-red.jpg") no-repeat center center;
+	background-size: 100%;
+}
+
+.last-element {
+  margin-bottom: 50px;
+}
+
+
+/**
+ * 以下是商务通插件在屏幕右上角悬浮按钮的自定义样式
+ * 通过媒体查询来重置其位置和大小
+*/
+@media (max-width: 768px) {  /** 超小屏幕设备 */
+  #LRdiv0 img {
+    width: 7%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {  /** 平板设备 */
+  #LRdiv0 img {
+    width: 5%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {  /** 中等屏幕设备 */
+  #LRdiv0 img {
+    width: 4%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1200px) {  /** 大屏幕设备 */
+  #LRdiv0 img {
+    width: 5%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+
+/** Start : section12 - 宣传语 */
+.section12-others {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 40px;
+  color: #919191;
+}
+.section12-others span { display: inline-block; }
+.section12-others .read { padding-right: 5px; }
+.section12-others .read-num { padding-right: 20px; }
+.section12-others .icon-thumb {
+  width: 15px;
+  height: 15px;
+  background: url("../images/single01/thumb-up.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 5px;
+}
+.section12 hr {
+  border-top-color: #f1f1f1;
+}
+/** End: section12 - 宣传语 */
+
+
+/** Start : section13 - 精选留言 */
+.section13-title {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section13-title span {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #919191;
+  background: #fff;
+  z-index: 1;
+}
+.section13-title hr {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: 0;
+  border-top-color: #f1f1f1;
+  border-top-style: dashed;
+}
+.section13-comment { padding-bottom: 30px; }
+.section13-comment-item {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section13-comment-item:nth-child(1) { padding-top: 20px; }
+.section13-comment-item .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single02/02_01/avatar-tianchangdijiumili.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user02 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/zhiai1992.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user03 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/tingyuxiaoxiao.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user04 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/xiyang.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user05 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/yinaifanghua.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item .content { width: 100%; }
+.section13-comment-item .content .comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section13-comment-item .content .comment p { margin: 0; }
+.section13-comment-item .content .comment p.name {
+  color: #616161;
+  padding-bottom: 5px;
+}
+.section13-comment-item .content .comment span.date {
+  font-size: 12px;
+  color: #919191;
+  padding-top: 2px;
+  padding-bottom: 15px;
+}
+.section13-comment-item .content .reply .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section13-comment-item .content .reply .name .author span {
+  display: inline-block;
+  color: #616161;
+}
+.section13-comment-item .content .reply .name .author span.icon {
+  width: 3px;
+  height: 15px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+  background: #02bb00;
+}
+.section13-comment-item .content .reply .name .thumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section13-comment-item .content .reply .name .thumb span { display: inline-block; }
+.section13-comment-item .content .reply .name .thumb span.icon-thumb {
+  width: 16px;
+  height: 16px;
+  background: url("../images/single01/thumb-up.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 5px;
+}
+.section13-comment-item .content .reply .name .thumb .num {
+  font-size: 13px;
+  color: #919191;
+}
+.section13-comment-item .content .reply .reply-text {
+  padding-left: 7px;
+  color: #616161;
+  margin-bottom: 0;
+}
+.section13-comment-item .content .reply .date {
+  font-size: 12px;
+  color: #919191;
+}
+/** End : section13 - 精选留言 */
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  background: #f86d8a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer p,
+footer span.wechat { font-size: 18px; color: #fecb2e; margin-bottom: 0; }
+
+@media (min-width: 768px) {  /** 非手机屏幕 */
+  footer.xs { display: none; }
+}
+@media (max-width: 768px) {  /** 手机屏幕 */
+  footer.lg { display: none; }
+  footer.xs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  footer p,
+  footer span.wechat { font-size: 16px; }
+  footer.xs p { height: 16px; line-height: 16px; margin-bottom: 0; }
+  footer.xs p:first-child { margin-bottom: 5px; }
+}
+@media (width: 768px) {
+  footer.lg { display: block; }
+}

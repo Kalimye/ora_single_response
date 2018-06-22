@@ -1,0 +1,616 @@
+/**
+ * single01.css
+ * single01 样式表
+*/
+
+body { font-family: "Microsoft YaHei"; color: #313131; }
+
+.main {
+  margin-top: 20px;
+}
+
+.para {
+  margin-top: 20px;
+}
+.text-red {
+  color: #fd3232;
+}
+.text-indent {
+  text-indent: 30px;
+}
+.text-strong { font-weight: bold; }
+.hidden {
+  display: none;
+}
+
+.section-item { padding-bottom: 20px; }
+.section-item .section-title {  }
+
+.section-title-left .circle {
+  width: 88px;
+  height: 88px;
+  background: #fdcb2e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title-left .circle p {
+  width: 84px;
+  height: 84px;
+  margin: auto;
+  background: #fe3233;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-title-right .title p {
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  margin-bottom: 0;
+  background: #fdcb2e;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 10px;
+}
+
+.part-title { display: flex; align-items: center; }
+.part-title-num {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  margin-right: 10px;
+  background: #fecb2e;
+  border-radius: 50%;
+  color: #fd3232;
+  font-size: 16px;
+  font-weight: bold;
+}
+.part-title-text {
+  font-weight: bold;
+  font-size: 16px;
+}
+.part-title-bg {  /** 标题分割线 */
+  width: 100%;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #fd3232;
+}
+
+/** 移动端下一级标题的文字大小 */
+@media (max-width: 768px) {
+  h1 { font-size: 24px; }
+}
+
+
+/** Start : section 01 - 标题及时间 */
+.section01 { padding-bottom: 50px; }
+.section01-date { color: #919191; padding: 15px; }
+.section01-link { color: #fd3232; }
+/** End : section 01 - 标题及时间 */
+
+/** Start : 资深的忠告 */
+.section02 .part01 { position: relative; padding-bottom: 15px; }
+/** End : 资深的忠告 */
+
+/** Start : section 03 - 请花五分钟耐心看完此文! */
+.section03 .part01,
+.section04 .part01,
+.section05 .part01,
+.section06 .part01,
+.section07 .part01,
+.section08 .part01,
+.section09 .part01,
+.section10 .part01 { display: flex; align-items: center; padding-bottom: 20px; }
+.section03 .part02,
+.section04 .part02,
+.section05 .part02,
+.section06 .part02 { padding-bottom: 15px; }
+.section03 .part03 .text-red { font-weight: bold; }
+/** End : section 03 - 请花五分钟耐心看完此文! */
+
+/** Start : section04 - 掌握挽回技巧才能正确挽回 */
+.section04 .part03 .text-red { font-weight: bold; }
+/** End : section04 - 掌握挽回技巧才能正确挽回 */
+
+/** Start : section05 - 请认真看完下面这三个问题 */
+.section05 .part03,
+.section06 .part03 { padding-left: 42px; }
+/** End : section05 - 请认真看完下面这三个问题 */
+
+/* Start : section07 - 不是谁都可以得到免费分析 */
+.section07 .part03 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .section07 .part03 .row .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.section07 .part03 .row .wrap {
+  width: 293px;
+  height: 124px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section07 .part03 .row .wrap .num {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+.section07 .part03 .row .wrap p {
+  margin-bottom: 0;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.section07 .part03 .row:nth-child(1) .wrap:nth-child(1) {
+  border: 2px solid #f8b551;
+}
+.section07 .part03 .row:nth-child(1) .wrap:nth-child(1) .num {
+  background: #f8b551;
+}
+.section07 .part03 .row:nth-child(1) .wrap:nth-child(2) {
+  border: 2px solid #5dc6c0;
+}
+.section07 .part03 .row:nth-child(1) .wrap:nth-child(2) .num {
+  background: #5dc6c0;
+}
+.section07 .part03 .row:nth-child(2) .wrap:nth-child(1) {
+  border: 2px solid #ff85b8;
+}
+.section07 .part03 .row:nth-child(2) .wrap:nth-child(1) .num {
+  background: #ff85b8;
+}
+.section07 .part03 .row:nth-child(2) .wrap:nth-child(2) {
+  border: 2px solid #9da7f4;
+}
+.section07 .part03 .row:nth-child(2) .wrap:nth-child(2) .num {
+  background: #9da7f4;
+}
+.section07 .part03 .row:nth-child(3) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section07 .part03 .row:nth-child(3) p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.section07 .part03 .row:nth-child(3) p:last-child {
+  color: #fd3232;
+}
+.section07 .part03 .row:nth-child(4) img {
+  width: 311px;
+  height: 311px;
+}
+/* End : section07 - 不是谁都可以得到免费分析 */
+
+/* Start : section08 - 挽回成功案例: 张先生 */
+.section08 .part03 .group01-title,
+.section08 .part03 .group02-title,
+.section09 .part03 .group01-title,
+.section09 .part03 .group02-title,
+.section10 .part03 .group01-title,
+.section10 .part03 .group02-title,
+.section11 .part03 .group01-title {
+  width: 236px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin: 20px auto 40px;
+  background: #fd3232;
+  border-radius: 10px;
+  color: #fff;
+}
+.section08 .part03 .group02-title,
+.section09 .part03 .group02-title,
+.section10 .part03 .group02-title {
+  margin-top: 40px;
+}
+.section08 .part03 .group01-info,
+.section09 .part03 .group01-info,
+.section10 .part03 .group01-info {
+  background: #fd3232;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+}
+.section08 .part03 .group01-info p,
+.section09 .part03 .group01-info p,
+.section10 .part03 .group01-info p {
+  margin-bottom: 0; color: #fff; font-size: 16px;
+}
+.section08 .part03 .group01-info-mark,
+.section09 .part03 .group01-info-mark,
+.section10 .part03 .group01-info-mark {
+  background: #fff;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+}
+.section08 .part03 .group01-info-mark-top,
+.section09 .part03 .group01-info-mark-top,
+.section10 .part03 .group01-info-mark-top {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section08 .part03 .group01-info-mark-bottom,
+.section09 .part03 .group01-info-mark-bottom,
+.section10 .part03 .group01-info-mark-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section08 .part03 .group01-info-mark span,
+.section09 .part03 .group01-info-mark span,
+.section10 .part03 .group01-info-mark span {
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  margin: 0 5px;
+  background: #fecb2e;
+  border-radius: 6px;
+}
+@media (min-width: 1200px) {
+  .section08 .part03 .group01-info,
+  .section09 .part03 .group01-info,
+  .section10 .part03 .group01-info {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section08 .part03 .group01-info-mark span,
+  .section09 .part03 .group01-info-mark span,
+  .section10 .part03 .group01-info-mark span {
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 30px;
+    margin: 0 5px;
+    background: #fecb2e;
+    border-radius: 6px;
+  }
+}
+.section08 .part03 .group01-images,
+.section09 .part03 .group01-images,
+.section10 .part03 .group01-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.section08 .part03 .group01-images .img-item,
+.section09 .part03 .group01-images .img-item,
+.section10 .part03 .group01-images .img-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.section08 .part03 .group02-text-item,
+.section09 .part03 .group02-text-item,
+.section10 .part03 .group02-text-item {
+  padding-bottom: 20px;
+}
+.section08 .part03 .group02-text-item-title,
+.section09 .part03 .group02-text-item-title,
+.section10 .part03 .group02-text-item-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+}
+.section08 .part03 .group02-text-item-title span,
+.section09 .part03 .group02-text-item-title span,
+.section10 .part03 .group02-text-item-title span {
+  display: inline-block;
+}
+.section08 .part03 .group02-text-item-title span.num,
+.section09 .part03 .group02-text-item-title span.num,
+.section10 .part03 .group02-text-item-title span.num {
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50%;
+  background: #fecb2e;
+  margin-right: 5px;
+  font-size: 16px;
+  color: #fd3232;
+  font-weight: bold;
+}
+.section08 .part03 .group02-text-item-title span.text,
+.section09 .part03 .group02-text-item-title span.text,
+.section10 .part03 .group02-text-item-title span.text {
+  font-weight: bold;
+  font-size: 16px;
+}
+.section08 .part03 .group02-text-item-para,
+.section09 .part03 .group02-text-item-para,
+.section10 .part03 .group02-text-item-para {
+  padding-left: 10px;
+}
+/* End : section08 - 挽回成功案例: 张先生 */
+
+/* Start : section11 - 学员对导师的评价 */
+.section11 .group02-item { padding-bottom: 20px; }
+.section11 .group02-item span { display: inline-block; }
+.section11 .group02-item span.name {
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  border-radius: 17px;
+  background: #fecb2e;
+  font-size: 16px;
+  color: #fd3232;
+  margin-bottom: 10px;
+}
+.section11 .group02-item p.para { font-size: 16px; margin: 0; }
+/* End : section11 - 学员对导师的评价 */
+
+/** Start : section12 - 宣传语 */
+.section12 .title {
+  font-size: 18px;
+  color: #fd3232;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.section12-box {
+  border: 2px solid #fd3232;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.section12-box p {
+  margin-bottom: 0;
+}
+.section12-others {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 40px;
+  color: #919191;
+}
+.section12-others span { display: inline-block; }
+.section12-others .read { padding-right: 5px; }
+.section12-others .read-num { padding-right: 20px; }
+.section12-others .icon-thumb {
+  width: 15px;
+  height: 15px;
+  background: url("../images/single01/thumb-up.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 5px;
+}
+.section12 hr {
+  border-top-color: #f1f1f1;
+}
+/** End: section12 - 宣传语 */
+
+/** Start : section13 - 精选留言 */
+.section13-title {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section13-title span {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #919191;
+  background: #fff;
+  z-index: 1;
+}
+.section13-title hr {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: 0;
+  border-top-color: #f1f1f1;
+  border-top-style: dashed;
+}
+.section13-comment { padding-bottom: 30px; }
+.section13-comment-item {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section13-comment-item:nth-child(1) { padding-top: 20px; }
+.section13-comment-item .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/dingshushu.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user02 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/zhiai1992.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user03 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/tingyuxiaoxiao.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user04 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/xiyang.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item.user05 .avatar {
+  display: inline-block;
+  width: 36px;
+  height: 37px;
+  background: url("../images/single01/avatar/yinaifanghua.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 10px;
+}
+.section13-comment-item .content { width: 100%; }
+.section13-comment-item .content .comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section13-comment-item .content .comment p { margin: 0; }
+.section13-comment-item .content .comment p.name {
+  color: #616161;
+  padding-bottom: 5px;
+}
+.section13-comment-item .content .comment span.date {
+  font-size: 12px;
+  color: #919191;
+  padding-top: 2px;
+  padding-bottom: 15px;
+}
+.section13-comment-item .content .reply .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section13-comment-item .content .reply .name .author span {
+  display: inline-block;
+  color: #616161;
+}
+.section13-comment-item .content .reply .name .author span.icon {
+  width: 3px;
+  height: 15px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+  background: #02bb00;
+}
+.section13-comment-item .content .reply .name .thumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section13-comment-item .content .reply .name .thumb span { display: inline-block; }
+.section13-comment-item .content .reply .name .thumb span.icon-thumb {
+  width: 16px;
+  height: 16px;
+  background: url("../images/single01/thumb-up.png") no-repeat center center;
+  background-size: 100%;
+  margin-right: 5px;
+}
+.section13-comment-item .content .reply .name .thumb .num {
+  font-size: 13px;
+  color: #919191;
+}
+.section13-comment-item .content .reply .reply-text {
+  padding-left: 7px;
+  color: #616161;
+  margin-bottom: 0;
+}
+.section13-comment-item .content .reply .date {
+  font-size: 12px;
+  color: #919191;
+}
+/** End : section13 - 精选留言 */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 68px;
+  line-height: 68px;
+  background: #fd3232;
+}
+footer p,
+footer span.wechat { font-size: 18px; color: #fecb2e; }
+
+@media (min-width: 768px) {  /** 非手机屏幕 */
+  footer.xs { display: none; }
+}
+@media (max-width: 768px) {  /** 手机屏幕 */
+  footer.lg { display: none; }
+  footer.xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer p,
+  footer span.wechat { font-size: 16px; }
+  footer.xs p { height: 16px; line-height: 16px; margin-bottom: 0; }
+  footer.xs p:first-child { margin-bottom: 5px; }
+}
+@media (width: 768px) {
+  footer.lg { display: block; }
+}
+
+/**
+ * 以下是商务通插件在屏幕右上角悬浮按钮的自定义样式
+ * 通过媒体查询来重置其位置和大小
+*/
+@media (max-width: 768px) {  /** 超小屏幕设备 */
+  #LRdiv0 img {
+    width: 7%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {  /** 平板设备 */
+  #LRdiv0 img {
+    width: 5%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {  /** 中等屏幕设备 */
+  #LRdiv0 img {
+    width: 4%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1200px) {  /** 大屏幕设备 */
+  #LRdiv0 img {
+    width: 5%;
+    position: fixed;
+    top: 20px;
+    right: 0;
+  }
+}
