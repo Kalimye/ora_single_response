@@ -767,7 +767,7 @@
 	// 当 state.random 为 false 时，固定微信号不再随机出现
 	if (!state.random) {
 	  for (var i = 0, len = wechat.length; i < len; i++) {
-	    wechat[i].textContent = 'jzfh1668';
+	    wechat[i].textContent = 'jzwh1226';
 	  }
 	  return false;
 	}
@@ -780,9 +780,10 @@
 	    if (type === 'application/json' || type === 'application/json; charset=UTF-8') {
 	      res = JSON.parse(xhr.responseText);
 
-	      if (res.static) {
+	      if (res.wechats) {
+		random_wechat = util.randomWechat(res.wechats);
 		for (var i = 0, len = wechat.length; i < len; i++) {
-		  wechat[i].textContent = res.static;
+		  wechat[i].textContent = random_wechat;
 		}
 	      }
 	      else {

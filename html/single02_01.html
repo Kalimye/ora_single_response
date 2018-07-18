@@ -453,39 +453,48 @@ if (isIE || isIE11) {
 }
 
 // 在页面中随机显示一个微信号
-// 调用 util.randomWechat() 方法，传入包含若干微信号的数组，将随机返回
-// 一个微信号
-(function(state) {
-  var
-    wechat = document.querySelectorAll('.wechat'),
-    xhr = new XMLHttpRequest(),
-    util = new Util(),
-    res, type, random_wechat
-  ;
+      // 调用 util.randomWechat() 方法，传入包含若干微信号的数组，将随机返回
+      // 一个微信号
+      (function(state) {
+	var
+	  wechat = document.querySelectorAll('.wechat'),
+	  xhr = new XMLHttpRequest(),
+	  util = new Util(),
+	  res, type, random_wechat
+	;
 
-  xhr.open('GET', '../conf.json');
-
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 & xhr.status === 200) {
-      type = xhr.getResponseHeader('Content-type');
-      if (type === 'application/json; charset=UTF-8' || type === 'application/json') {
-	res = JSON.parse(xhr.responseText);
-
-	if (res.static) {
+	// 当 state.random 为 false 时，固定微信号不再随机出现
+	if (!state.random) {
 	  for (var i = 0, len = wechat.length; i < len; i++) {
-	    wechat[i].textContent = res.static;
+	    wechat[i].textContent = 'jzwh1226';
 	  }
-	}
-	else {
-	  console.log('配置文件 conf.json 有误，未找到 wechats 属性！');
+	  return false;
 	}
 
-      }
-    }
-  };
+	xhr.open('GET', '../conf.json');
 
-  xhr.send(null);
-}({random: true}));
+	xhr.onreadystatechange = function() {
+	  if (xhr.readyState === 4 & xhr.status === 200) {
+	    type = xhr.getResponseHeader('Content-type');
+	    if (type === 'application/json' || type === 'application/json; charset=UTF-8') {
+	      res = JSON.parse(xhr.responseText);
+
+	      if (res.wechats) {
+		random_wechat = util.randomWechat(res.wechats);
+		for (var i = 0, len = wechat.length; i < len; i++) {
+		  wechat[i].textContent = random_wechat;
+		}
+	      }
+	      else {
+		console.log('配置文件 conf.json 有误，未找到 wechats 属性！');
+	      }
+
+	    }
+	  }
+	};
+
+	xhr.send(null);
+      }({random: true}));
     </script>
 
     <!-- 推广部链接 -->
