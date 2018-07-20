@@ -60,6 +60,8 @@ p { line-height: 33px; }
 	padding: 10px 0;
 	margin-bottom: 10px;
 }
+
+.main { padding-bottom: 68px; }
 .image-big img {
   width: 689px;
 	height: 409px;
