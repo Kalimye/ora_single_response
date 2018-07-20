@@ -7,6 +7,7 @@ body { font-family: "Microsoft YaHei"; color: #313131; }
 
 .main {
   margin-top: 20px;
+	padding-bottom: 68px;
 }
 
 .para {
@@ -434,7 +435,6 @@ body { font-family: "Microsoft YaHei"; color: #313131; }
 }
 .section13-comment { padding-bottom: 30px; }
 .section13-comment-item {
-  padding-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
