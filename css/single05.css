@@ -5,11 +5,11 @@
 
 html { font-size: 100px; }
 
-body { font-family: "Microsoft YaHei"; color: #313131; }
+body { font-family: "Microsoft YaHei"; color: #313131; font-size: 16px;}
 p { line-height: 33px; } 
 
 .text-indent { text-indent: 28px; }
-.text-red { color: #e6460f; }
+.text-red { color: #f86d8a; }
 .text-white { color: #fff; }
 .text-strong { font-weight: bold; }
 .box {
@@ -156,7 +156,7 @@ p { line-height: 33px; }
   margin-right: 5px;
 }
 .section01-date { color: #919191; padding: 15px; }
-.section01-link { color: #fd3232; }
+.section01-link { color: #f86d8a; }
 /** End: section 01 - 标题及发布日期 */
 
 .four-steps {
@@ -544,7 +544,7 @@ footer span.wechat { font-size: 18px; color: #fecb2e; margin-bottom: 0; }
 
 .box {
   width: 100%;
-  background: #e85722;
+  background: #f86d8a;
   padding: 10px 0;
   border-radius: 0;
   margin: 14px 0;
